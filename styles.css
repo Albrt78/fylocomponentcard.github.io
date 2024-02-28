@@ -35,7 +35,6 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
-    margin-top: -3.7rem;
     gap: 1.8rem;
 }
 
@@ -46,7 +45,6 @@ main .wrapper-1 {
     width: 100%;
     max-width: 350px;
     border-top-right-radius: 6.3rem;
-    margin-top: 2rem;
 }
 
 main .wrapper-1 .logo img {
