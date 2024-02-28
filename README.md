@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Fylo Data Storage Component Master](https://github.com/Albrt78/frontend_mentor_project/tree/main/Fylo%20Data%20Storage%20Component%20Master)
--   Live Site URL: [Fylo Data Storage Component Master](https://effervescent-florentine-f0e691.netlify.app/)
+-   Solution URL: [Fylo Data Storage Component Master](https://github.com/Albrt78/fylocomponentcard.github.io)
+-   Live Site URL: [Fylo Data Storage Component Master](https://albrt78.github.io/fylocomponentcard.github.io/)
 
 ### Built with
 
