@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+    /* Primary */
+    --Gradient: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    /* Neutral */
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    margin-top: -3.7rem;
+    gap: 1.8rem;
+}
+
+main .wrapper-1 {
+    background-color: var(--Dark-Blue);
+    padding: 2.5rem 0 3rem 2.6rem;
+    border-radius: 0.8rem;
+    width: 100%;
+    max-width: 350px;
+    border-top-right-radius: 6.3rem;
+}
+
+main .wrapper-1 .logo img {
+    width: 8.3rem;
+}
+
+main > .wrapper-1 .icon {
+    margin-top: 1.8rem;
+}
+
+main > .wrapper-1 .icon ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main > .wrapper-1 .icon ul li {
+    background-color: var(--Very-Dark-Blue);
+    padding-block: 0.6rem;
+    padding-inline: 0.85rem;
+    height: auto;
+    border-radius: 0.7rem;
+}
+
+main > .wrapper-1 .icon ul li img.document-icon {
+    height: 1.6rem;
+    width: 1.3rem;
+}
+
+main > .wrapper-1 .icon ul li:not(:first-child) {
+    padding-block: 0.7rem;
+    padding-inline: 0.7rem;
+}
+
+main > .wrapper-1 .icon ul li img {
+    width: 1.6rem;
+    height: 1.3rem;
+}
+
+main .wrapper-2 {
+    background-color: var(--Dark-Blue);
+    padding: 1.5rem 2.7rem 2rem 2.7rem;
+    border-radius: 0.4rem;
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 155px;
+    max-width: 545px;
+    position: relative;
+}
+
+main .wrapper-2 p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--Pale-Blue);
+    font-family: "Raleway", sans-serif;
+}
+
+main .wrapper-2 .chat-box {
+    --border-radius: 0.6rem;
+
+    background-color: #fff;
+    font-family: "Raleway", sans-serif;
+    padding: 0.7rem 1.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    position: absolute;
+    top: -2.9rem;
+    right: 2.6rem;
+}
+
+main .wrapper-2 .chat-box::after {
+    --triangle-radius: 11.5px;
+
+    content: "";
+    background-color: #000;
+    font-family: "Raleway", sans-serif;
+    border-top: var(--triangle-radius) solid #fff;
+    border-right: var(--triangle-radius) solid #fff;
+    border-bottom: var(--triangle-radius) solid var(--Dark-Blue);
+    border-left: var(--triangle-radius) solid var(--Dark-Blue);
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+}
+
+main .wrapper-2 .chat-box .big {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2.65rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+
+main .chat-box .small {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--Grayish-Blue);
+}
+
+main .load {
+    padding-block-start: 1.3rem;
+    margin-top: -0.3rem;
+}
+
+main .load .load-body {
+    background: var(--Very-Dark-Blue);
+    cursor: pointer;
+    border-radius: 0.8rem;
+    padding-inline: 0.22rem;
+    padding-block-start: 0.22rem;
+    padding-block-end: 0.2rem;
+    margin-bottom: 1rem;
+    height: 1.4rem;
+}
+
+main .load .load-body .load-line {
+    background: var(--Gradient);
+    height: 0.95rem;
+    border-radius: 0.5rem;
+    width: 340px;
+    padding-block: 1.20855px;
+}
+
+main .load .load-body .load-line .load-thumb {
+    background-color: #fff;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-left: 20.3rem;
+    border-radius: 50%;
+}
+
+main .load .range-number {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1.6rem;
+}
+
+main .load .range-number p {
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+footer {
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+/* Media Query */
+@media screen and (max-width: 1399.98px) {
+    body {
+        background-image: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    main {
+        flex-direction: column;
+        padding-block-start: 0;
+        gap: 1.5rem;
+    }
+
+    main .wrapper-1 {
+        max-width: 600px;
+    }
+
+    main .wrapper-2 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    main .wrapper-2 .chat-box {
+        border-bottom-right-radius: 0.8rem;
+        top: 9rem;
+        right: 12rem;
+    }
+
+    main .wrapper-2 .chat-box::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 705.98px) {
+    main .wrapper-1 {
+        max-width: 400px;
+    }
+
+    main .wrapper-2 {
+        max-width: 400px;
+    }
+
+    main .wrapper-2 p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    main .wrapper-2 .chat-box {
+        top: 10rem;
+        right: 5.5rem;
+    }
+
+    main .load .load-body {
+        width: 100%;
+    }
+
+    main .load .load-body .load-line {
+        padding-inline-start: 13.5rem;
+        width: 231px;
+    }
+}
+
+@media screen and (max-width: 576.98px) {
+    main .wrapper-1 {
+        max-width: 350px;
+    }
+
+    main .wrapper-2 {
+        max-width: 350px;
+    }
+
+    main .wrapper-2 .chat-box {
+        top: 10rem;
+        right: 4.5rem;
+        left: auto;
+    }
+
+    main .load .load-body .load-line {
+        padding-inline-start: 10.5rem;
+        width: 182px;
+    }
+}
+
+@media screen and (max-width: 443.98px) {
+    main .wrapper-2 .chat-box {
+        top: 12rem;
+        right: 4.3rem;
+        left: 4.3rem;
+    }
+
+    main .wrapper-2 .chat-box .big {
+        font-size: 2rem;
+    }
+
+    main .chat-box .small {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 376.98px) {
+    main {
+        padding-inline: 1.5rem;
+    }
+
+    main .wrapper-1 .logo img {
+        width: 8rem;
+    }
+
+    main > .wrapper-1 .icon ul li {
+        padding-block: 0.7rem;
+        padding-inline: 0.8rem;
+        border-radius: 0.5rem;
+    }
+
+    main > .wrapper-1 .icon ul li:not(:first-child) {
+        padding-block: 0.84rem;
+        padding-inline: 0.8rem;
+    }
+
+    main > .wrapper-1 .icon ul li img {
+        width: 1rem;
+        height: 0.9rem;
+    }
+
+    main > .wrapper-1 .icon ul li img.document-icon {
+        height: 1.2rem;
+    }
+
+    main .wrapper-2 .chat-box {
+        top: 10rem;
+        right: 4.5rem;
+        left: auto;
+        padding-block: 0.8rem;
+        padding-inline-start: 2.1rem;
+    }
+
+    main .wrapper-2 p {
+        font-size: 0.8rem;
+    }
+
+    main .load .load-body .load-line {
+        padding-inline-start: 9.9rem;
+        width: 172.5px;
+    }
+}
+
+@media screen and (max-width: 342.98px) {
+    main .wrapper-2 .chat-box {
+        top: 10rem;
+        right: 3.5rem;
+        left: auto;
+    }
+
+    main .load .load-body .load-line {
+        padding-inline-start: 7rem;
+        width: 126px;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+}
