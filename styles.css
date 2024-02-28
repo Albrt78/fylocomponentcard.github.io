@@ -35,6 +35,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
+    margin-top: -1.1rem;
     gap: 1.8rem;
 }
 
@@ -128,7 +129,7 @@ main .wrapper-2 .chat-box::after {
     border-bottom: var(--triangle-radius) solid var(--Dark-Blue);
     border-left: var(--triangle-radius) solid var(--Dark-Blue);
     position: absolute;
-    bottom: -23px;
+    bottom: -22px;
     right: 0;
 }
 
