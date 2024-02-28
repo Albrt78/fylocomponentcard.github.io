@@ -203,50 +203,15 @@ footer {
         background-position: center;
         background-size: cover;
     }
-
-    main {
-        flex-direction: column;
-        padding-block-start: 0;
-        gap: 1.5rem;
-    }
-
-    main .wrapper-1 {
-        max-width: 600px;
-    }
-
-    main .wrapper-2 {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    main .wrapper-2 .chat-box {
-        border-bottom-right-radius: 0.8rem;
-        top: 9rem;
-        right: 12rem;
-    }
-
-    main .wrapper-2 .chat-box::after {
-        display: none;
-    }
 }
 
-@media screen and (max-width: 705.98px) {
+@media screen and (max-width: 992.98px) {
     main .wrapper-1 {
-        max-width: 400px;
+        max-width: 350px;
     }
 
     main .wrapper-2 {
-        max-width: 400px;
-    }
-
-    main .wrapper-2 p {
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    main .wrapper-2 .chat-box {
-        top: 10rem;
-        right: 5.5rem;
+        max-width: 450px;
     }
 
     main .load .load-body {
@@ -254,108 +219,94 @@ footer {
     }
 
     main .load .load-body .load-line {
-        padding-inline-start: 13.5rem;
-        width: 231px;
+        width: 230px;
+    }
+
+    main .load .load-body .load-line .load-thumb {
+        margin-left: 13.4rem;
+    }
+}
+
+@media screen and (max-width: 800.98px) {
+    main {
+        flex-direction: column;
+        margin-inline: 2rem;
+        gap: 1rem;
+    }
+
+    main .wrapper-1 {
+        max-width: 100%;
+    }
+
+    main .wrapper-2 {
+        max-width: 100%;
+    }
+
+    main .wrapper-2 .chat-box {
+        top: 8rem;
+        left: 10rem;
+        right: 10rem;
+        border-bottom-right-radius: 0.6rem;
+    }
+
+    main .wrapper-2 .chat-box::after {
+        display: none;
+    }
+
+    main .load .load-body .load-line {
+        width: 90%;
+    }
+
+    main .load .load-body .load-line .load-thumb {
+        margin-left: 97.5%;
     }
 }
 
 @media screen and (max-width: 576.98px) {
-    main .wrapper-1 {
-        max-width: 350px;
-    }
-
-    main .wrapper-2 {
-        max-width: 350px;
+    main .wrapper-2 p {
+        text-align: center;
     }
 
     main .wrapper-2 .chat-box {
-        top: 10rem;
-        right: 4.5rem;
-        left: auto;
-    }
-
-    main .load .load-body .load-line {
-        padding-inline-start: 10.5rem;
-        width: 182px;
-    }
-}
-
-@media screen and (max-width: 443.98px) {
-    main .wrapper-2 .chat-box {
-        top: 12rem;
-        right: 4.3rem;
-        left: 4.3rem;
+        right: 9rem;
+        left: 9rem;
     }
 
     main .wrapper-2 .chat-box .big {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     main .chat-box .small {
-        font-size: 0.6rem;
+        font-size: 1rem;
+    }
+
+    main .load .load-body .load-line .load-thumb {
+        margin-left: 95.5%;
     }
 }
 
-@media screen and (max-width: 376.98px) {
-    main {
-        padding-inline: 1.5rem;
-    }
-
-    main .wrapper-1 .logo img {
-        width: 8rem;
-    }
-
-    main > .wrapper-1 .icon ul li {
-        padding-block: 0.7rem;
-        padding-inline: 0.8rem;
-        border-radius: 0.5rem;
-    }
-
-    main > .wrapper-1 .icon ul li:not(:first-child) {
-        padding-block: 0.84rem;
-        padding-inline: 0.8rem;
-    }
-
-    main > .wrapper-1 .icon ul li img {
-        width: 1rem;
-        height: 0.9rem;
-    }
-
-    main > .wrapper-1 .icon ul li img.document-icon {
-        height: 1.2rem;
-    }
-
+@media screen and (max-width: 510.98px) {
     main .wrapper-2 .chat-box {
-        top: 10rem;
-        right: 4.5rem;
-        left: auto;
-        padding-block: 0.8rem;
-        padding-inline-start: 2.1rem;
+        top: 8rem;
+        left: 8rem;
+        right: 8rem;
+        border-bottom-right-radius: 0.6rem;
     }
 
-    main .wrapper-2 p {
+    main .wrapper-2 .chat-box .big {
+        font-size: 2.3rem;
+    }
+
+    main .chat-box .small {
         font-size: 0.8rem;
     }
-
-    main .load .load-body .load-line {
-        padding-inline-start: 9.9rem;
-        width: 172.5px;
-    }
 }
 
-@media screen and (max-width: 342.98px) {
+@media screen and (max-width: 375.98px) {
     main .wrapper-2 .chat-box {
-        top: 10rem;
-        right: 3.5rem;
-        left: auto;
-    }
-
-    main .load .load-body .load-line {
-        padding-inline-start: 7rem;
-        width: 126px;
-    }
-
-    footer {
-        margin-top: 2rem;
+        top: 9rem;
+        left: 5rem;
+        right: 5rem;
+        border-bottom-right-radius: 0.6rem;
     }
 }
